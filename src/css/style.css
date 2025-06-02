@@ -76,13 +76,6 @@ img {
     border: 1px solid #000000;
 }
 
-.feedback-form input:active,
-.feedback-form textarea:active {
-    outline: none;
-    box-shadow: none;
-    border: 1px solid #808080;
-}
-
 .feedback-form label:hover {
     border: 5px soid #4E75FF;
 }
