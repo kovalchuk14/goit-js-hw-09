@@ -13,6 +13,10 @@ function save(e) {
 }
 
 function pageStart() {
+    if (localStorage.getItem("feedback-form-state") == null) {
+        return;
+    }
+
     let locEmail = JSON.parse(localStorage.getItem("feedback-form-state")).email;
     let locMessage = JSON.parse(localStorage.getItem("feedback-form-state")).message;
 
@@ -26,12 +30,12 @@ function pageStart() {
 }
 
 
-try {
 
-    pageStart();
-} catch (e) {
 
-}
+pageStart();
+
+
+
 
 form.addEventListener("submit", submitForm);
 
