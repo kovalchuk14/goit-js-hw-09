@@ -7,8 +7,6 @@ let form = document.querySelector(".feedback-form");
 form.addEventListener("input", save);
 
 function save(e) {
-    e.preventDefault();
-
     formData[e.target.name] = e.target.value;
 
     localStorage.setItem("feedback-form-state", JSON.stringify(formData));
